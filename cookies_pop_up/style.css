@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 300ms, opacity 300ms;
+  }
+  .popup_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .cookie_statement .site_ownership {
+    
+    font-size: 36px;
+    margin: 0 0 18px;
+  }
+
+ 
+  
+  .popup__container {
+
+      width: 270px;
+      height: 211px;
+    background-color: #fff;
+    border: solid 4px #f7c413;
+    text-align: center;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .accept_button {
+    margin-top: 20px;
+    width: 180px;
+    height: 40px;
+    background-color: #f7c413;
+    border: none;
+    font-size: 14px;
+  }
+  .close-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 0;
+    background: url('./button-close.svg') center center / 100% 100% no-repeat;
+    width: 40px;
+    height: 40px;  
+    fill: #000;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+  }
